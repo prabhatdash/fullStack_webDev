@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link href="BMI.css" rel="stylesheet">
+    <script src="BMI.js"></script>
+</head>
+<body>
+
+<div class="container" style="background-color: rgb(105,168,255); border-radius:10px; border-width:20px;border-style:solid; border-color:rgb(103,170,255) ;
+width:90%;">
+    <h1>BMI Calculator</h1>
+    <label for="gender">Select Gender:</label>
+    <select class="input" id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+    <input class="input" type="text" id="height" name="height" placeholder="Height (in cm)">
+    <input class="input" type="number" id="weight" name="weight" placeholder="Weight (in kg)">
+    <input class="input" type="submit" value="Calculate" onclick="calculate();changeColor();changeImage()">
+    <input class="input result" type="text" id="result">
+    <input type="number" id="only">
+    <img id="img" src="image4.png" alt="Default Image" style="width:90%;height:75%;border-radius:8px;">
+</div></body>
+</html>

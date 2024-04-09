@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+h2 {
+    margin-top: 30px;
+}
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type="submit"]:hover {
+    background-color: rgba(147, 4, 4, 0.91);
+}
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+#only{visibility: hidden;}
+.input{border-radius: 8px;}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><link href="EMIcalculator.css" rel="stylesheet">
+    <title>EMI Calculator</title>
+    <script src="EMIcalculator.js">
+    </script>
+</head>
+<body><center><div id="form">
+<h2>EMI Calculator</h2><form>
+    <input class="input" type="number" placeholder="Principal Amount:" id="principal" name="principal" required><br><br>
+    <input class="input" type="number" placeholder="Interest Rate (annual %):" id="rate" name="rate" required><br><br>
+    <input class="input" type="number" placeholder="Time (months):" id="time" name="time" required><br><br>
+    <input class="button" type="button" value="Calculate EMI" onclick="calculateEMI()"><br><br>
+    <input class="input" type="text" id="result" placeholder="Answer EMI" disabled>
+</form><br><br></div></center>
+</body>
+</html>

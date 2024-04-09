@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/2434.jpg");
+
+}
+
+.calculator {
+    border: 1px solid #005703;
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.74);
+
+
+}
+
+#textinput {
+    width: 320px;
+    border: none;
+    border-radius: 6px;
+    padding: 24px;
+    margin: 10px;
+    background: rgba(82, 107, 73, 0.57);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+#textinput::placeholder{
+    color: #ffffff;
+}
+
+.button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius:6px;
+    background-color: rgb(82, 78, 78);
+    color: #ffffff;
+    font-size: 20px;
+
+}
+
+
+.equalBtn:hover{background-color: #27d500;
+}
+.clear:hover{background-color: #d00b0b;
+}
+.operators {
+    background-color: rgba(229, 115, 0, 0.75);
+    color: #ffffff;
+}
+.button:hover {
+    transform: scale(1.1);
+}

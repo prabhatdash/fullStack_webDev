@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest Calculator</title>
+  <link href="CI.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Compound Interest Calculator</h1>
+    <table align="center">
+        <tr align="left"><td><label for="principal">Principal Amount:</label></td></tr>
+        <tr><td><input class="input" type="number" id="principal" placeholder="Enter principal amount (₹)"></td></tr>
+    <tr align="left"><td><label for="rate">Interest Rate (%):</label></td></tr>
+    <tr><td><input  class="input" type="number" id="rate" placeholder="Enter interest rate"></td></tr>
+    <tr align="left"><td><label for="time">Time (years):</label></td></tr>
+    <tr><td><input  class="input" type="number" id="time" placeholder="Enter time in years"></td></tr>
+    <tr align="left"><td><label for="compound">Frequency:</label></td></tr>
+    <tr><td><select id="compound">
+        <option value="12">Monthly</option>
+        <option value="1">Yearly</option>
+    </select></td></tr>
+    <tr><td><button onclick="calculateInterest()">Calculate</button></td></tr></table>
+    <div id="result"></div><br><br>
+</div>
+<script>
+    function calculateInterest() {
+        var principal = parseFloat(document.getElementById("principal").value);
+        var rate = parseFloat(document.getElementById("rate").value) / 100;
+        var time = parseFloat(document.getElementById("time").value);
+        var compound = parseInt(document.getElementById("compound").value);
+
+        var amount = principal * Math.pow(1 + rate / compound, compound * time);
+        var interest = amount - principal;
+
+        document.getElementById("result").innerHTML = "Total Amount: ₹" + amount.toFixed(2) + "<br>Interest: ₹" + interest.toFixed(2);}
+</script>
+</body>
+</html>
